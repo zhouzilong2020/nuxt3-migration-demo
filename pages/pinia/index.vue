@@ -1,11 +1,14 @@
 <template>
-  <ul>
-    <ls>{{ counterStore.counter }}</ls>
-    <ls><button @click="() => counterStore.counter++">Add One</button></ls>
-    <ls>
-      <nuxt-link to="/">Back To Home and check this page again</nuxt-link>
-    </ls>
-  </ul>
+  <div>
+    {{ counterStore.counter }}
+    <button
+      style="background-color: antiquewhite; margin: 10px"
+      @click="() => counterStore.counter++"
+    >
+      Add One
+    </button>
+    <nuxt-link to="/">Back To Home and check this page again</nuxt-link>
+  </div>
 </template>
 <script lang="ts">
 import useCounterStore from "@/store";
