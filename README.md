@@ -18,3 +18,7 @@ However, nuxt integrates vue-router by default, and the routing is configured ou
 
 Nuxt official provides a [solution](nuxtApp) that allows us to configure a middleware to implement the interceptor logic.
 What should be emphasized is that Nuxt3 will override the ```routes``` and ```history``` options, and there is no way to control this.
+
+### vite plugin
+Vite provides powerful plugins like ```unplugin-icons```. Since nuxt3 uses vite by default, there are should be a way to do the same thing in nuxt3.
+Fortunately, [unplugin-icons](https://github.com/antfu/unplugin-icons/issues/114) has added support to nuxt3. There is no big change between using vite and nuxt3, and your just need to copy the config from ```vite.config.ts``` to the relevant part in ```nuxt.config.ts```
